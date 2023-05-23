@@ -1,0 +1,12 @@
+<h1>Details of the pet</h1>
+
+<p><%= @pet.name %></p>
+<p><%= @pet.species %></p>
+<p><%= @pet.address %></p>
+<p><%= @pet.found_on %></p>
+
+<%= link_to "Delete", pet_path(@pet), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-danger"  %>
+<%= link_to "Edit",  edit_pet_path, class: "btn btn-warning"%>
+<%= link_to "All pets", pets_path, class: "btn btn-primary"  %>
+
+
